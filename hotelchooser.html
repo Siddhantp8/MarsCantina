@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mars Hotels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('mars.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            /* Add a semi-transparent background to the container */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            margin: 20px 0;
+        }
+        .hotel-item {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mars Hotel Selection</h1>
+        </header>
+        <main>
+            <div class="hotel-item">
+                <h2>Galactic Getaway</h2>
+                <p>description</p>
+                <form action="hotel1.html" method="post">
+                    <input type="hidden" name="hotel" value="Galactic Getaway">
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+            <div class="hotel-item">
+                <h2>Red Planet Retreat</h2>
+                <p>description</p>
+                <form action="hotel2.html" method="post">
+                    <input type="hidden" name="hotel" value="Red Planet Retreat">
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+            <!-- Add more hotels as needed -->
+        </main>
+        <footer>
+            <p>Mars Hotels InQuest</p>
+        </footer>
+    </div>
+</body>
+</html>

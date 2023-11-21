@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mars Food Delivery - Delivery Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Add a background image */
+            background-image: url('mars.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            /* Add a semi-transparent background to the container */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mars Food Delivery - Delivery Details</h1>
+        </header>
+        <main>
+            <form action="thankyou.html" method="post">
+                <label for="deliveryTime">Delivery Time:</label><br>
+                <select id="hours" name="hours">
+                    <!-- Loop to generate options -->
+                    <script>
+                        for(var i = 0; i < 24; i++){
+                            document.write('<option value="' + i + '">' + i + '</option>');
+                        }
+                    </script>
+                </select>
+                :
+                <select id="minutes" name="minutes">
+                    <!-- Loop to generate options -->
+                    <script>
+                        for(var i = 0; i < 60; i++){
+                            document.write('<option value="' + i + '">' + i + '</option>');
+                        }
+                    </script>
+                </select>
+                <br>
+                <label for="deliveryDate">Delivery Date (Darian Calendar):</label><br>
+                <select id="sol" name="sol">
+                    <!-- Loop to generate options -->
+                    <script>
+                        for(var i = 1; i <= 28; i++){
+                            document.write('<option value="' + i + '">' + i + '</option>');
+                        }
+                    </script>
+                </select>
+                Sol,
+                <select id="month" name="month">
+                    <!-- Darian calendar months -->
+                    <option value="1">Sagittarius</option>
+                    <option value="2">Dhanus</option>
+                    <option value="3">Capricornus</option>
+                    <option value="4">Makara</option>
+                    <option value="5">Aquarius</option>
+                    <option value="6">Kumbha</option>
+                    <option value="7">Pisces</option>
+                    <option value="8">Mina</option>
+                    <option value="9">Aries</option>
+                    <option value="10">Mesha</option>
+                    <option value="11">Taurus</option>
+                    <option value="12">Rishabha</option>
+                    <option value="13">Gemini</option>
+                    <option value="14">Mithuna</option>
+                    <option value="15">Cancer</option>
+                    <option value="16">Karka</option>
+                    <option value="17">Leo</option>
+                    <option value="18">Simha</option>
+                    <option value="19">Virgo</option>
+                    <option value="20">Kanya</option>
+                    <option value="21">Libra</option>
+                    <option value="22">Tula</option>
+                    <option value="23">Scorpius</option>
+                    <option value="24">Vrishika</option>
+                </select>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <p>© 2023 Mars Food Delivery</p>
+        </footer>
+    </div>
+</body>
+</html>
